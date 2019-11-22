@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Покупай-раскупай</title>
+		<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./content.js"></script>
+		<script src="mdl/material.min.js"></script>
+		<link rel="stylesheet" href="mdl/material.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	
+	<body>		
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<!-- Шапка -->
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row">					
+					<span class="mdl-layout-title">Покупай-раскупай</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="mdl-navigation mdl-layout--large-screen-only">
+						<div class="material-icons mdl-badge mdl-badge--overlap" data-badge="0">shopping_cart</div>
+					</nav>
+				</div>
+			</header>
+			<!-- Drawer-меню -->
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Несколько ссылок</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="https://vk.com/id35800614">Я Вконтакте</a>
+					<a class="mdl-navigation__link" href="https://getmdl.io/components/index.html">Библиотека MDL</a>
+					<a class="mdl-navigation__link" href="https://jquery.com/">Библиотека jQuery</a>
+					<a class="mdl-navigation__link" href="https://github.com/AlexRakhmanov/shopSite">Исходники на github.com</a>
+				</nav>
+			</div>
+			<!-- Содержание страницы -->
+			<main class="mdl-layout__content">
+				<div class="mdl-grid">
+					<!-- Список формируется из content.js -->
+				</div>
+			</main>
+		</div>	
+
+		<!-- Диалоговое окно -->
+		<dialog class="mdl-dialog wide">			
+			<div class="mdl-dialog__content">
+				<!-- Сюда добавляется описание из content.js -->
+			</div>
+			<div class="mdl-dialog__actions">
+				<button type="button" class="mdl-button mdl-js-button mdl-button--primary close">Закрыть</button>
+			</div>
+		</dialog>
+		
+	</body>
+</html>
